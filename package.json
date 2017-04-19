@@ -1,0 +1,34 @@
+{
+  "name": "gltf-viewer",
+  "version": "1.0.0-beta",
+  "description": "Custom element with WebGL viewer for GLTF scenes",
+  "license": "MIT",
+  "author": {
+    "name": "Ilya Stupakov",
+    "email": "istupakov@gmail.com"
+  },
+  "keywords": [
+    "WebGL",
+    "GLTF"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/istupakov/gltf-viewer.git"
+  },
+  "main": "dist/gltf-viewer.js",
+  "dependencies": {
+    "gl-matrix": "^2.3.2"
+  },
+  "devDependencies": {
+    "@types/gl-matrix": "^2.2.34",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.3.0",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server --config webpack.test.config.js",
+    "build": "./node_modules/.bin/webpack",
+    "build:prod": "./node_modules/.bin/webpack -p --env production"
+  }
+}
